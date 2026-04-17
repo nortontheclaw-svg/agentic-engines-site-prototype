@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agentic Engines | Install structured AI workflows</title>
+    <title>Agentic Engines | Snap-together AI workflows</title>
     <meta
       name="description"
-      content="Install the runtime, drop in the workflow, and tune the system with a premium product stack for structured AI operations."
+      content="Move beyond blank-box AI with a simple install kit, role-shaped workflow packs, and a $25 starter bundle designed to get a working agent running fast."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -19,382 +19,429 @@
   <body>
     <div class="site-shell">
       <header class="topbar">
-        <div class="brand-lockup">
+        <a class="brand-lockup" href="#hero" aria-label="Agentic Engines home">
           <span class="brand-mark">AE</span>
-          <div>
-            <p class="eyebrow">Structured AI product system</p>
-            <a class="brand-name" href="#hero">Agentic Engines</a>
-          </div>
-        </div>
+          <span class="brand-text">
+            <span class="eyebrow">Snap-together AI</span>
+            <span class="brand-name">Agentic Engines</span>
+          </span>
+        </a>
+
         <nav class="topnav" aria-label="Primary">
-          <a href="#products">Products</a>
-          <a href="#trust">Permissions</a>
-          <a href="#inside">Inside</a>
-          <a class="nav-cta" href="#bundle">Get the bundle</a>
+          <a href="#why">Why this exists</a>
+          <a href="#ladder">Pricing</a>
+          <a href="#workflow-packs">Workflow packs</a>
+          <a href="#bundle" class="nav-cta">Get the $25 bundle</a>
         </nav>
       </header>
 
       <main>
         <section class="hero" id="hero">
-          <div class="hero-copy">
-            <p class="section-tag">Install once. Run structured workflows. Tune what comes next.</p>
-            <h1>Blueprinted AI systems for operators who want structure, not prompt clutter.</h1>
+          <div class="hero-copy paper-stack">
+            <p class="section-tag">Blue-pen setup, not blank-box AI</p>
+            <h1>Stop chatting with AI. Install a working agent in one command. No engineering needed.</h1>
             <p class="hero-text">
-              Start with the install layer, drop in a workflow built for a real operating role,
-              then calibrate the system until it feels like your own internal engine.
+              You do not need to be technical to move beyond the blank box. You just need the right
+              baseplate, a workflow that already knows its job, and a quick tune-up that makes it feel
+              like yours.
             </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#products">View the system</a>
-              <a class="button button-secondary" href="#trust">See permission design</a>
+
+            <div class="hero-proofline" aria-label="Simplicity proof">
+              <span>One command</span>
+              <span>One model hookup</span>
+              <span>One prompt to start working</span>
             </div>
-            <div class="terminal-block" aria-label="Install command example">
+
+            <div class="price-signal" aria-label="Starter bundle price comparison">
+              <div>
+                <p class="price-label">Starter Bundle</p>
+                <p class="price-big">$25</p>
+              </div>
+              <div class="price-math">
+                <p><strong>$34</strong> bought separately</p>
+                <p>Install Kit $9 + Workflow Pack $15 + Tuning Kit $10</p>
+              </div>
+            </div>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#bundle">Get the Full System — $25</a>
+              <a class="button button-secondary" href="#ladder">Browse the Kits</a>
+            </div>
+
+            <div class="terminal-card" aria-label="Install command example">
               <div class="terminal-head">
                 <span></span><span></span><span></span>
-                <p>install cue</p>
+                <p>install-preview.sh</p>
               </div>
-              <code>
-                <span class="prompt">$</span> ae install runtime --workflow chief-of-staff --mode
-                supervised
-              </code>
-              <p>
-                Runtime, workflow, and approval boundaries configured as a single system instead
-                of stitched-together prompts.
-              </p>
+              <code><span class="prompt">$</span> ae install starter-bundle --workflow chief-of-staff</code>
+              <p>The runtime, role, and approval shape land together so the AI starts with a job instead of a blank page.</p>
             </div>
           </div>
 
-          <div class="hero-art blueprint-panel">
-            <svg viewBox="0 0 680 620" role="img" aria-label="Exploded sketch diagram of the product system">
+          <div class="hero-visual blueprint-board">
+            <div class="board-note note-top">snap-together system map</div>
+            <svg viewBox="0 0 660 620" role="img" aria-label="Blueprint sketch of install kit, workflow pack, tuning kit, and bundle">
               <defs>
-                <filter id="roughen" x="-10%" y="-10%" width="120%" height="120%">
-                  <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="1" seed="7" />
-                  <feDisplacementMap in="SourceGraphic" scale="1.4" />
-                </filter>
-                <marker
-                  id="arrow"
-                  markerWidth="10"
-                  markerHeight="10"
-                  refX="9"
-                  refY="5"
-                  orient="auto"
-                  markerUnits="strokeWidth"
-                >
-                  <path d="M0,0 L10,5 L0,10" fill="none" stroke="currentColor" stroke-width="1.4" />
+                <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+                  <path d="M0,0 L10,5 L0,10" />
                 </marker>
               </defs>
 
-              <g class="diagram-layer diagram-shadow" filter="url(#roughen)">
-                <path d="M130 438 L280 358 L436 419 L282 502 Z" />
-                <path d="M160 372 L311 290 L470 352 L318 435 Z" />
-                <path d="M192 304 L343 222 L504 285 L350 369 Z" />
-                <path d="M225 235 L375 154 L537 217 L382 302 Z" />
+              <g class="board-grid">
+                <path d="M90 118 H570" />
+                <path d="M90 215 H570" />
+                <path d="M90 312 H570" />
+                <path d="M90 409 H570" />
+                <path d="M90 506 H570" />
+                <path d="M132 84 V540" />
+                <path d="M248 84 V540" />
+                <path d="M364 84 V540" />
+                <path d="M480 84 V540" />
               </g>
 
-              <g class="diagram-layer diagram-main">
-                <path d="M130 438 L280 358 L436 419 L282 502 Z" />
-                <path d="M160 372 L311 290 L470 352 L318 435 Z" />
-                <path d="M192 304 L343 222 L504 285 L350 369 Z" />
-                <path d="M225 235 L375 154 L537 217 L382 302 Z" />
-
-                <path d="M280 358 L311 290" />
-                <path d="M436 419 L470 352" />
-                <path d="M282 502 L318 435" />
-                <path d="M343 222 L375 154" />
-
-                <path d="M214 272 L266 243" />
-                <path d="M247 340 L298 312" />
-                <path d="M322 468 L382 436" />
-                <path d="M386 198 L447 169" />
-
-                <circle cx="392" cy="255" r="18" />
-                <circle cx="392" cy="255" r="6" />
-                <path d="M374 255 H410" />
-                <path d="M392 237 V273" />
+              <g class="paper-module">
+                <rect x="112" y="124" width="172" height="116" rx="22" />
+                <text x="138" y="162">01 / BASEPLATE</text>
+                <text x="138" y="195" class="module-title">Install Kit</text>
+                <text x="138" y="220" class="module-copy">$9</text>
               </g>
 
-              <g class="diagram-layer diagram-accent">
-                <path d="M66 115 C128 90, 181 95, 248 132" marker-end="url(#arrow)" />
-                <path d="M548 140 C604 167, 613 214, 580 256" marker-end="url(#arrow)" />
-                <path d="M522 468 C564 451, 607 467, 630 498" marker-end="url(#arrow)" />
-                <path d="M96 476 C77 443, 86 393, 124 360" marker-end="url(#arrow)" />
+              <g class="paper-module featured-module">
+                <rect x="238" y="242" width="196" height="140" rx="24" />
+                <text x="268" y="282">02 / BUILD</text>
+                <text x="268" y="320" class="module-title">Workflow Pack</text>
+                <text x="268" y="348" class="module-copy">Chief of Staff / Thought Leadership</text>
               </g>
 
-              <g class="diagram-note">
-                <line x1="62" y1="116" x2="173" y2="116" />
-                <text x="58" y="102">01 runtime foundation / install kit</text>
+              <g class="paper-module">
+                <rect x="406" y="116" width="150" height="100" rx="20" />
+                <text x="430" y="152">03 / CUSTOM</text>
+                <text x="430" y="183" class="module-title">Tuning Kit</text>
+                <text x="430" y="206" class="module-copy">$10</text>
+              </g>
 
-                <line x1="520" y1="138" x2="626" y2="138" />
-                <text x="450" y="124">02 workflow engine / chosen operating model</text>
+              <g class="paper-module bundle-module">
+                <rect x="162" y="432" width="330" height="96" rx="24" />
+                <text x="196" y="468">04 / FULL BUILD</text>
+                <text x="196" y="502" class="module-title">Starter Bundle $25</text>
+              </g>
 
-                <line x1="466" y1="534" x2="630" y2="534" />
-                <text x="446" y="520">03 tuning pack / guardrails + automation</text>
+              <g class="board-connectors">
+                <path d="M286 242 C284 214, 246 196, 216 192" marker-end="url(#arrow)" />
+                <path d="M394 242 C402 204, 446 186, 481 182" marker-end="url(#arrow)" />
+                <path d="M332 382 L332 430" marker-end="url(#arrow)" />
+              </g>
 
-                <line x1="50" y1="548" x2="216" y2="548" />
-                <text x="50" y="534">04 bundle / complete stack ready to own</text>
+              <g class="board-annotations">
+                <path d="M78 168 C64 165, 54 174, 52 188" />
+                <text x="32" y="161">one clean install</text>
+                <path d="M548 268 C590 270, 602 297, 592 326" />
+                <text x="528" y="255">pick the job</text>
+                <path d="M92 492 C62 488, 48 470, 50 442" />
+                <text x="32" y="505">$9 + $15 + $10 = $34</text>
               </g>
             </svg>
-            <div class="annotation annotation-top">exploded system view</div>
-            <div class="annotation annotation-bottom">slightly sketched, deliberately bounded</div>
+            <div class="board-note note-bottom">bundle shown as the obvious assembled path</div>
           </div>
         </section>
 
-        <section class="section" id="products">
-          <div class="section-heading">
-            <p class="section-tag">Four product objects</p>
-            <h2>Choose the layer you need, or take the full system in one install.</h2>
+        <section class="section why-section" id="why">
+          <div class="section-heading narrow">
+            <p class="section-tag">Why this exists</p>
+            <h2>AI is impressive. Most people still use it the boring way.</h2>
             <p>
-              The commercial ladder stays obvious because the architecture is obvious: foundation,
-              operating workflow, calibration, then the complete stack.
+              They open the same blank box, start from scratch, copy-paste context, and get generic output
+              that never quite becomes a workflow. Agentic Engines installs more structure from the start:
+              a role, a memory shape, a rhythm, and visible boundaries.
             </p>
           </div>
 
-          <div class="product-grid">
-            <article class="product-card">
-              <div class="card-sketch sketch-install"></div>
-              <p class="card-kicker">Install Kit</p>
-              <h3>Set the runtime up correctly before the engine arrives.</h3>
-              <p>
-                Install Hermes or OpenClaw cleanly, create the right folder and approval structure,
-                and reduce the friction that usually shows up later.
-              </p>
+          <div class="compare-strip">
+            <article class="compare-card">
+              <p class="card-kicker">Old AI</p>
               <ul>
-                <li>Clean runtime structure from day one</li>
-                <li>Installation guidance built for real use</li>
-                <li>Less setup drag when the workflow lands</li>
+                <li>Blank-box prompting every time</li>
+                <li>Copy-paste fatigue and forgotten context</li>
+                <li>Generic output with no real job to do</li>
               </ul>
-              <a class="button button-tertiary" href="#bundle">Start with install</a>
+            </article>
+            <article class="compare-card compare-card-strong">
+              <p class="card-kicker">Your AI after install</p>
+              <ul>
+                <li>Installed once with a role-shaped workflow</li>
+                <li>Knows the structure, cadence, and boundaries</li>
+                <li>Feels like a working system instead of a chat habit</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section ladder-section" id="ladder">
+          <div class="section-heading">
+            <p class="section-tag">Product ladder</p>
+            <h2>Start with pieces if you want. The bundle is designed to be the obvious move.</h2>
+            <p>
+              The pricing works because the stack works. The Workflow Pack is the belief engine, while the
+              Install Kit and Tuning Kit make it easier to get the result you actually wanted.
+            </p>
+          </div>
+
+          <div class="ladder-grid">
+            <article class="ladder-card">
+              <div class="mini-sketch sketch-install"></div>
+              <p class="card-kicker">Install Kit</p>
+              <h3>Baseplate</h3>
+              <p class="ladder-price">$9</p>
+              <p>Set up the runtime, files, and basic operating shape without getting lost in tooling friction.</p>
             </article>
 
-            <article class="product-card product-card-active">
-              <div class="card-sketch sketch-workflow"></div>
+            <article class="ladder-card ladder-card-workflow">
+              <div class="mini-sketch sketch-workflow"></div>
               <p class="card-kicker">Workflow Pack</p>
-              <div class="segmented-control" role="tablist" aria-label="Workflow pack type">
+              <h3>The build</h3>
+              <p class="ladder-price">$15</p>
+              <p>The part that makes the system useful: a job-specific workflow with clearer memory, role, and outputs.</p>
+            </article>
+
+            <article class="ladder-card">
+              <div class="mini-sketch sketch-tuning"></div>
+              <p class="card-kicker">Tuning Kit</p>
+              <h3>Custom pieces</h3>
+              <p class="ladder-price">$10</p>
+              <p>Sharpen prompts, constraints, and edge-case behavior so the workflow fits your environment better.</p>
+            </article>
+
+            <article class="ladder-card ladder-card-bundle" aria-label="Starter bundle pricing">
+              <div class="bundle-badge">Best place to start</div>
+              <div class="mini-sketch sketch-bundle"></div>
+              <p class="card-kicker">Starter Bundle</p>
+              <h3>The full build</h3>
+              <p class="ladder-price ladder-price-featured">$25</p>
+              <p class="bundle-math">$34 separately. Save $9 and skip the gaps.</p>
+              <ul class="bundle-list">
+                <li>Install Kit + Workflow Pack + Tuning Kit</li>
+                <li>The fastest path to a working, shaped agent</li>
+                <li>Commercially obvious because the pieces reinforce each other</li>
+              </ul>
+              <a class="button button-primary" href="#bundle">Get the Full System — $25</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="section workflow-section" id="workflow-packs">
+          <div class="section-heading">
+            <p class="section-tag">Workflow Pack belief</p>
+            <h2>Pick the workflow that makes you think, “yes, that is what I want AI to do for me.”</h2>
+            <p>
+              This is the key conversion moment. Once the workflow feels right, the install and tuning pieces
+              stop feeling optional and start feeling like the cleanest way to make it work properly.
+            </p>
+          </div>
+
+          <div class="workflow-layout">
+            <article class="workflow-selector paper-stack">
+              <div class="selector-head">
+                <p class="card-kicker">Choose a build</p>
+                <p class="selector-note">Selected pack updates the proof points and recommended bundle CTA.</p>
+              </div>
+
+              <div class="workflow-tabs" role="tablist" aria-label="Workflow pack selector">
                 <button class="workflow-toggle is-active" type="button" data-workflow="chief" role="tab" aria-selected="true">
                   Chief of Staff
                 </button>
                 <button class="workflow-toggle" type="button" data-workflow="thought" role="tab" aria-selected="false">
                   Thought Leadership
                 </button>
+                <button class="workflow-toggle" type="button" data-workflow="operator" role="tab" aria-selected="false">
+                  Solo Operator
+                </button>
               </div>
-              <h3 id="workflow-title">Chief of Staff Agentic Engine</h3>
-              <p id="workflow-copy">
-                A structured operating system for weekly priorities, meeting prep, synthesis, and
-                follow-through that adapts to how the principal actually works.
-              </p>
-              <ul id="workflow-list">
-                <li>Turns scattered inputs into decision-ready briefs</li>
-                <li>Maintains momentum across meetings and actions</li>
-                <li>Feels like an operating cadence, not a prompt folder</li>
-              </ul>
-              <a class="button button-tertiary" id="workflow-cta" href="#bundle">Choose this workflow</a>
+
+              <div class="workflow-panel">
+                <div class="workflow-copy">
+                  <p class="workflow-price" id="workflow-price">$15 pack or bundle it for $25</p>
+                  <h3 id="workflow-title">Chief of Staff Workflow Pack</h3>
+                  <p id="workflow-copy">
+                    A structured weekly operating system for priorities, meetings, synthesis, and follow-through that
+                    reduces chasing and keeps decisions moving.
+                  </p>
+                </div>
+
+                <div class="workflow-proof-grid">
+                  <article>
+                    <p class="proof-label">Best for</p>
+                    <p id="workflow-fit">Founders, executives, and busy operators who need a steadier weekly rhythm.</p>
+                  </article>
+                  <article>
+                    <p class="proof-label">You stop doing</p>
+                    <p id="workflow-stop">Re-explaining context, rebuilding agendas, and losing decisions between meetings.</p>
+                  </article>
+                </div>
+
+                <ul id="workflow-list">
+                  <li>Turns scattered notes into decision-ready briefs</li>
+                  <li>Tracks actions and follow-through across meetings</li>
+                  <li>Feels like a cadence, not a folder full of prompts</li>
+                </ul>
+
+                <div class="workflow-actions">
+                  <a class="button button-primary" id="workflow-cta" href="#bundle">Get this workflow in the $25 bundle</a>
+                  <a class="button button-secondary" href="#how">See how setup works</a>
+                </div>
+              </div>
             </article>
 
-            <article class="product-card">
-              <div class="card-sketch sketch-tuning"></div>
-              <p class="card-kicker">Skill / Tuning Pack</p>
-              <h3>Sharpen the installed engine until it fits your environment.</h3>
-              <p>
-                Add better prompts, stronger guardrails, and tighter automation opportunities so the
-                workflow becomes more capable without losing control.
-              </p>
-              <ul>
-                <li>Calibration rather than reinstallation</li>
-                <li>More tailored outputs and safer execution paths</li>
-                <li>Designed to improve leverage after deployment</li>
-              </ul>
-              <a class="button button-tertiary" href="#bundle">Tune the system</a>
-            </article>
+            <aside class="workflow-aside">
+              <article class="belief-card">
+                <p class="card-kicker">Why the pack matters</p>
+                <h3>The Workflow Pack is where “interesting AI” becomes “useful AI.”</h3>
+                <p>
+                  It gives the system a real job, a repeatable structure, and the sense that the AI is working with
+                  you rather than waiting for you to invent the entire process each time.
+                </p>
+              </article>
 
-            <article class="product-card product-card-bundle">
-              <div class="card-sketch sketch-bundle"></div>
-              <p class="card-kicker">All Packs Bundle</p>
-              <h3>The complete stack for teams that want the system, not the pieces.</h3>
-              <p>
-                Foundation, workflow, and tuning in one purchase. The fastest route from clean
-                install to a working, permission-aware operating engine.
-              </p>
-              <ul>
-                <li>Full-stack path with the strongest value</li>
-                <li>One purchase, coherent sequencing, fewer gaps</li>
-                <li>Built to feel ownable from the first install</li>
-              </ul>
-              <a class="button button-primary" href="#bundle">Get the bundle</a>
-            </article>
-          </div>
-        </section>
-
-        <section class="section split-section" id="why">
-          <div class="section-heading narrow">
-            <p class="section-tag">Why it works</p>
-            <h2>The sequencing is engineered to reduce drag, not manufacture upsells.</h2>
-          </div>
-          <div class="reason-grid">
-            <article>
-              <span>01</span>
-              <h3>Install the runtime properly</h3>
-              <p>
-                The system starts with structure: runtime setup, files, boundaries, and the basic
-                shape required to operate without friction.
-              </p>
-            </article>
-            <article>
-              <span>02</span>
-              <h3>Install the workflow</h3>
-              <p>
-                Drop in a role-based engine that handles a real operating pattern instead of asking
-                the user to invent one from scratch.
-              </p>
-            </article>
-            <article>
-              <span>03</span>
-              <h3>Tune the workflow</h3>
-              <p>
-                Improve prompts, guardrails, and automation opportunities after deployment so the
-                system grows sharper without getting looser.
-              </p>
-            </article>
+              <article class="belief-card">
+                <p class="card-kicker">Why the bundle wins</p>
+                <h3>Once the workflow fits, the rest of the bundle explains itself.</h3>
+                <p>
+                  The baseplate removes setup drag. The tuning kit makes the workflow feel more personal and more
+                  controlled. That is why the $25 bundle is the sensible default, not just a pricing trick.
+                </p>
+              </article>
+            </aside>
           </div>
         </section>
 
         <section class="section trust-section" id="trust">
           <div class="section-heading">
-            <p class="section-tag">Permission design</p>
-            <h2>Control is part of the product, not a warning label buried after purchase.</h2>
+            <p class="section-tag">Trust and permission</p>
+            <h2>Useful does not need to mean loose. The boundaries stay visible.</h2>
             <p>
-              The system is designed to work inside explicit boundaries. Read, draft, execute, and
-              approval states are visible so trust feels designed in, not retrofitted.
+              This is controlled reassurance, not compliance theatre. The workflows are designed so read, draft,
+              execute, and approval states stay legible from the beginning.
             </p>
           </div>
 
           <div class="trust-layout">
-            <div class="matrix-card">
+            <article class="matrix-card">
               <div class="matrix-head">
-                <span>Capability matrix</span>
-                <span>supervised mode</span>
+                <span>Mode</span>
+                <span>Read</span>
+                <span>Draft</span>
+                <span>Execute</span>
+                <span>Approval</span>
               </div>
-              <div class="matrix-grid" role="table" aria-label="Permission matrix">
-                <div class="matrix-row matrix-labels" role="row">
-                  <span role="columnheader">State</span>
-                  <span role="columnheader">Read</span>
-                  <span role="columnheader">Draft</span>
-                  <span role="columnheader">Execute</span>
-                  <span role="columnheader">Approval</span>
-                </div>
-                <div class="matrix-row" role="row">
-                  <span>Research</span>
-                  <span class="yes">Yes</span>
-                  <span class="yes">Yes</span>
-                  <span class="no">No</span>
-                  <span class="soft">Not needed</span>
-                </div>
-                <div class="matrix-row" role="row">
-                  <span>Ops draft</span>
-                  <span class="yes">Yes</span>
-                  <span class="yes">Yes</span>
-                  <span class="soft">Limited</span>
-                  <span class="yes">Required</span>
-                </div>
-                <div class="matrix-row" role="row">
-                  <span>Automation</span>
-                  <span class="yes">Yes</span>
-                  <span class="soft">Template</span>
-                  <span class="soft">Scoped</span>
-                  <span class="yes">Checkpoint</span>
-                </div>
+              <div class="matrix-row">
+                <span>Research</span>
+                <span class="yes">Yes</span>
+                <span class="yes">Yes</span>
+                <span class="soft">No</span>
+                <span class="soft">Not needed</span>
               </div>
-            </div>
+              <div class="matrix-row">
+                <span>Working draft</span>
+                <span class="yes">Yes</span>
+                <span class="yes">Yes</span>
+                <span class="soft">Scoped</span>
+                <span class="yes">Required</span>
+              </div>
+              <div class="matrix-row">
+                <span>Automation step</span>
+                <span class="yes">Yes</span>
+                <span class="soft">Template</span>
+                <span class="soft">Checkpointed</span>
+                <span class="yes">Required</span>
+              </div>
+            </article>
 
             <div class="trust-notes">
               <article>
-                <h3>Boundaries stay legible</h3>
-                <p>
-                  Approval checkpoints are visible in the workflow design, so the user understands
-                  where the system can move freely and where it must wait.
-                </p>
+                <h3>Permission is part of the design</h3>
+                <p>The system can be helpful without pretending it should run wild.</p>
               </article>
               <article>
-                <h3>Governance becomes a selling point</h3>
-                <p>
-                  Permission design creates confidence for operators, principals, and teams who need
-                  leverage without feeling like the system can drift out of bounds.
-                </p>
+                <h3>Approval moments stay obvious</h3>
+                <p>You can see where the agent reads, drafts, waits, and asks before doing more.</p>
               </article>
               <article>
-                <h3>Structured by default</h3>
-                <p>
-                  The packs are built to feel installable: setup logic, operating logic, and tuning
-                  logic all align around controlled execution.
-                </p>
+                <h3>Safer by default for novice users</h3>
+                <p>That makes the setup feel less intimidating and easier to trust on day one.</p>
               </article>
             </div>
           </div>
         </section>
 
-        <section class="section full-bleed-section" id="how">
+        <section class="section setup-section" id="how">
           <div class="section-heading narrow">
-            <p class="section-tag">How it works</p>
-            <h2>A product system that assembles like components, not like content downloads.</h2>
+            <p class="section-tag">How setup works</p>
+            <h2>A weekend project that actually works on Monday.</h2>
+            <p>
+              The product is modular on purpose: install the baseplate, snap in the workflow, then do a quick
+              tune-up so the agent feels shaped around your job.
+            </p>
           </div>
-          <div class="timeline">
-            <article>
+
+          <div class="setup-grid">
+            <article class="step-card">
               <p class="timeline-step">Step 1</p>
-              <h3>Install the foundation layer</h3>
-              <p>Set runtime, structure, and command habits so the environment is ready for real work.</p>
+              <h3>Install the baseplate</h3>
+              <p>Set the runtime, folder shape, and command pattern so you are not improvising the foundation.</p>
             </article>
-            <article>
+            <article class="step-card step-card-strong">
               <p class="timeline-step">Step 2</p>
-              <h3>Choose a working engine</h3>
-              <p>Load a role-specific workflow pack that gives the system a practical operating pattern.</p>
+              <h3>Snap in a workflow pack</h3>
+              <p>Give the system a job, a rhythm, and better memory so it stops acting like a blank chat window.</p>
             </article>
-            <article>
+            <article class="step-card">
               <p class="timeline-step">Step 3</p>
-              <h3>Calibrate for your edge cases</h3>
-              <p>Use tuning packs to tighten judgment, outputs, and automation so the engine fits your environment.</p>
+              <h3>Tune the edges</h3>
+              <p>Adjust prompts, guardrails, and output patterns so the workflow fits how you actually work.</p>
             </article>
           </div>
         </section>
 
-        <section class="section inside-section" id="inside">
-          <div class="section-heading">
-            <p class="section-tag">What’s inside</p>
-            <h2>Premium pack contents, framed around leverage rather than file counts.</h2>
-          </div>
-          <div class="inside-grid">
-            <article>
-              <h3>Install layer</h3>
-              <p>Setup architecture, terminal cues, directory patterns, and deployment guidance that reduce misconfiguration.</p>
-            </article>
-            <article>
-              <h3>Workflow layer</h3>
-              <p>Role-shaped operating logic, reusable working rhythms, input handling, and output structures designed to be used daily.</p>
-            </article>
-            <article>
-              <h3>Tuning layer</h3>
-              <p>Prompt upgrades, approval guardrails, automation ideas, and refinement notes that improve fit after adoption.</p>
-            </article>
-            <article>
-              <h3>Commercial clarity</h3>
-              <p>Each pack is understandable on its own, but the bundle makes the strongest case because the layers reinforce each other.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section bundle-section" id="bundle">
-          <div class="bundle-panel">
+        <section class="section rationale-section" id="bundle">
+          <div class="bundle-panel paper-stack">
             <div>
-              <p class="section-tag">Complete path</p>
-              <h2>Install the full system and move from setup to calibrated execution in one go.</h2>
+              <p class="section-tag">Bundle rationale</p>
+              <h2>The $25 Starter Bundle is the easiest yes because it removes the exact friction people are trying to avoid.</h2>
               <p>
-                For teams and operators who already know they want the whole stack: runtime,
-                workflow, and tuning bundled into a coherent install path with fewer gaps and more
-                confidence from the start.
+                If the Workflow Pack is the reason to buy, the Install Kit and Tuning Kit are the reason the workflow
+                works properly without a messy weekend. That is why the bundle should feel obvious: it gives you the
+                useful part and the surrounding pieces that make the useful part land cleanly.
               </p>
             </div>
-            <div class="bundle-actions">
-              <a class="button button-primary" href="mailto:hello@example.com?subject=All%20Packs%20Bundle">
-                Reserve the bundle
+
+            <div class="bundle-side">
+              <div class="bundle-pricebox">
+                <p class="price-label">Starter Bundle</p>
+                <p class="price-big">$25</p>
+                <p class="bundle-math">$34 separately</p>
+              </div>
+              <a class="button button-primary button-full" href="mailto:hello@example.com?subject=Starter%20Bundle%20-%20Agentic%20Engines">
+                Get the Full System — $25
               </a>
-              <p>Placeholder premium CTA copy. Replace with checkout, waitlist, or live storefront when ready.</p>
+              <a class="button button-secondary button-full" href="mailto:hello@example.com?subject=Browse%20Agentic%20Engines%20Kits">
+                Browse individual kits
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section final-cta-section">
+          <div class="final-cta paper-stack">
+            <p class="section-tag">Final CTA</p>
+            <h2>Less prompting. More installed structure.</h2>
+            <p>
+              Start with the full build if you want the cleanest path. Start with a single kit if you need to feel the
+              pieces first. Either way, the point is the same: move from curious AI usage to a simple working agent system.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="mailto:hello@example.com?subject=Starter%20Bundle%20-%20Agentic%20Engines">
+                Get the Full System — $25
+              </a>
+              <a class="button button-secondary" href="#workflow-packs">Browse workflow packs</a>
             </div>
           </div>
         </section>

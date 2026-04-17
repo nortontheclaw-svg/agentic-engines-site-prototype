@@ -1,31 +1,54 @@
 const workflowContent = {
   chief: {
-    title: "Chief of Staff Agentic Engine",
+    price: "$15 pack or bundle it for $25",
+    title: "Chief of Staff Workflow Pack",
     copy:
-      "A structured operating system for weekly priorities, meeting prep, synthesis, and follow-through that adapts to how the principal actually works.",
+      "A structured weekly operating system for priorities, meetings, synthesis, and follow-through that reduces chasing and keeps decisions moving.",
+    fit: "Founders, executives, and busy operators who need a steadier weekly rhythm.",
+    stop: "Re-explaining context, rebuilding agendas, and losing decisions between meetings.",
     items: [
-      "Turns scattered inputs into decision-ready briefs",
-      "Maintains momentum across meetings and actions",
-      "Feels like an operating cadence, not a prompt folder",
+      "Turns scattered notes into decision-ready briefs",
+      "Tracks actions and follow-through across meetings",
+      "Feels like a cadence, not a folder full of prompts",
     ],
-    cta: "Choose Chief of Staff",
+    cta: "Get Chief of Staff in the $25 bundle",
   },
   thought: {
-    title: "Thought Leadership Agentic Engine",
+    price: "$15 pack or bundle it for $25",
+    title: "Thought Leadership Workflow Pack",
     copy:
-      "A publishing workflow for founders and operators who need sharper idea capture, drafting, refinement, and content sequencing without losing their voice.",
+      "A publishing workflow for turning rough ideas into sharper articles, posts, and content sequences without flattening your point of view.",
+    fit: "Founders, consultants, and experts who need consistent publishing with a clearer voice.",
+    stop: "Starting every draft from zero and losing good ideas in scattered notes.",
     items: [
-      "Shapes rough notes into publishable point-of-view",
-      "Builds repeatable drafting and review loops",
-      "Balances speed, consistency, and editorial control",
+      "Shapes rough notes into usable drafts faster",
+      "Builds a repeatable capture, draft, and review loop",
+      "Keeps voice and editorial control more intact",
     ],
-    cta: "Choose Thought Leadership",
+    cta: "Get Thought Leadership in the $25 bundle",
+  },
+  operator: {
+    price: "$15 pack or bundle it for $25",
+    title: "Solo Operator Workflow Pack",
+    copy:
+      "A practical system for the person doing too many jobs at once: planning, research, admin, and execution support in a single operating loop.",
+    fit: "Freelancers, indie builders, and lean operators who want AI to help run the week, not just answer questions.",
+    stop: "Context switching, rebuilding task lists, and manually stitching small jobs together.",
+    items: [
+      "Keeps weekly priorities visible and moving",
+      "Turns fragmented tasks into a clearer operating queue",
+      "Creates more leverage without pretending to be fully autonomous",
+    ],
+    cta: "Get Solo Operator in the $25 bundle",
   },
 };
 
 const toggleButtons = document.querySelectorAll(".workflow-toggle");
+const workflowPrice = document.querySelector("#workflow-price");
 const workflowTitle = document.querySelector("#workflow-title");
 const workflowCopy = document.querySelector("#workflow-copy");
+const workflowFit = document.querySelector("#workflow-fit");
+const workflowStop = document.querySelector("#workflow-stop");
 const workflowList = document.querySelector("#workflow-list");
 const workflowCta = document.querySelector("#workflow-cta");
 
@@ -33,8 +56,11 @@ function renderWorkflow(key) {
   const selected = workflowContent[key];
   if (!selected) return;
 
+  workflowPrice.textContent = selected.price;
   workflowTitle.textContent = selected.title;
   workflowCopy.textContent = selected.copy;
+  workflowFit.textContent = selected.fit;
+  workflowStop.textContent = selected.stop;
   workflowList.innerHTML = selected.items.map((item) => `<li>${item}</li>`).join("");
   workflowCta.textContent = selected.cta;
 

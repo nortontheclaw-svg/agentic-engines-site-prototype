@@ -1,12 +1,12 @@
 # Agentic Engines Static Prototype
 
-This is a single-page static marketing site prototype built from `brief.md`.
+This is a single-page static marketing site prototype built from `brief.md` and refined with `brief-pass-two.md`.
 
 ## Files
 
 - `index.html` - page structure and content
-- `styles.css` - responsive layout, blueprint-sketch visual system, and motion
-- `script.js` - Workflow Pack toggle between `Chief of Staff` and `Thought Leadership`
+- `styles.css` - responsive layout, paper-and-blueprint visual system, and tactile states
+- `script.js` - Workflow Pack selector content updates
 
 ## Run locally
 
@@ -23,6 +23,16 @@ Then open:
 ```text
 http://localhost:8000
 ```
+
+## Adaptation notes
+
+The prototype remains static-friendly on purpose:
+
+- content is plain semantic HTML
+- interaction is limited to a small progressive-enhancement selector in `script.js`
+- styling is centralized in `styles.css`
+
+That keeps it straightforward to split later into Shopify sections, snippets, and theme styles without untangling a framework build step first.
 
 ## Deploy
 
