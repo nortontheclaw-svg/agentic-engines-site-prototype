@@ -6,6 +6,7 @@ const workflowContent = {
       "Run your week with less chasing and better follow-through. Turns notes into briefs, actions, and decision-ready summaries.",
     fit: "Founders, executives, and busy operators who need a steadier weekly rhythm.",
     stop: "Less re-explaining, less agenda rebuilding, fewer dropped decisions.",
+    rhythm: "Decision briefs, follow-through notes, and a cleaner weekly loop.",
     items: [
       "Turns scattered notes into decision-ready briefs",
       "Keeps actions and follow-through visible between meetings",
@@ -14,6 +15,8 @@ const workflowContent = {
     cta: "Get Chief of Staff in the $25 bundle",
     heroName: "Chief of Staff",
     heroOutcome: "Decision-ready briefs, follow-through, and a steadier week.",
+    heroFit: "Founders and executives with a crowded week.",
+    heroRhythm: "Weekly brief rhythm",
     heroBundle: "Pick a workflow and install the full system in one go.",
   },
   thought: {
@@ -23,6 +26,7 @@ const workflowContent = {
       "Turn rough ideas into structured posts, themes, and publishing momentum without flattening your point of view.",
     fit: "Founders, consultants, and experts who want a clearer publishing rhythm.",
     stop: "Less staring at blank drafts and fewer good ideas lost in scattered notes.",
+    rhythm: "Capture ideas, shape themes, and keep publishing moving.",
     items: [
       "Shapes rough notes into usable drafts faster",
       "Builds a repeatable capture, draft, and review loop",
@@ -31,6 +35,8 @@ const workflowContent = {
     cta: "Get Thought Leadership in the $25 bundle",
     heroName: "Thought Leadership",
     heroOutcome: "Themes, drafts, and publishing momentum from rough notes.",
+    heroFit: "Experts and founders building a publishing habit.",
+    heroRhythm: "Idea-to-post rhythm",
     heroBundle: "Choose the publishing workflow and install the stack around it.",
   },
   operator: {
@@ -40,6 +46,7 @@ const workflowContent = {
       "Build a lighter operating rhythm for planning, prioritising, and shipping without losing context across the week.",
     fit: "Freelancers, indie builders, and lean operators doing too many jobs at once.",
     stop: "Less context switching, fewer rebuilt task lists, and less manual stitching.",
+    rhythm: "Weekly planning, clearer priorities, and less context drag.",
     items: [
       "Keeps weekly priorities visible and moving",
       "Turns fragmented tasks into a clearer operating queue",
@@ -48,6 +55,8 @@ const workflowContent = {
     cta: "Get Solo Operator in the $25 bundle",
     heroName: "Solo Operator",
     heroOutcome: "Planning, prioritising, and shipping with less context drag.",
+    heroFit: "Lean teams and independents running a lot at once.",
+    heroRhythm: "Plan-and-ship rhythm",
     heroBundle: "Start with the workflow that helps run the week, not just answer questions.",
   },
 };
@@ -58,10 +67,13 @@ const workflowTitle = document.querySelector("#workflow-title");
 const workflowCopy = document.querySelector("#workflow-copy");
 const workflowFit = document.querySelector("#workflow-fit");
 const workflowStop = document.querySelector("#workflow-stop");
+const workflowRhythm = document.querySelector("#workflow-rhythm");
 const workflowList = document.querySelector("#workflow-list");
 const workflowCta = document.querySelector("#workflow-cta");
 const heroWorkflowName = document.querySelector("#hero-workflow-name");
 const heroWorkflowOutcome = document.querySelector("#hero-workflow-outcome");
+const heroWorkflowFit = document.querySelector("#hero-workflow-fit");
+const heroWorkflowRhythm = document.querySelector("#hero-workflow-rhythm");
 const heroWorkflowCtaCopy = document.querySelector("#hero-workflow-cta-copy");
 
 function renderWorkflow(key) {
@@ -73,10 +85,13 @@ function renderWorkflow(key) {
   workflowCopy.textContent = selected.copy;
   workflowFit.textContent = selected.fit;
   workflowStop.textContent = selected.stop;
+  workflowRhythm.textContent = selected.rhythm;
   workflowList.innerHTML = selected.items.map((item) => `<li>${item}</li>`).join("");
   workflowCta.textContent = selected.cta;
   heroWorkflowName.textContent = selected.heroName;
   heroWorkflowOutcome.textContent = selected.heroOutcome;
+  heroWorkflowFit.textContent = selected.heroFit;
+  heroWorkflowRhythm.textContent = selected.heroRhythm;
   heroWorkflowCtaCopy.textContent = selected.heroBundle;
 
   toggleButtons.forEach((button) => {
